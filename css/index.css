@@ -1,0 +1,340 @@
+/*媒体查询*/
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  body{
+    width: 100%;
+  }
+  .footer .footer-bg .cat-content ul li h6{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+  .footer .footer-bg .cat-content ul li p{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+  .small{
+    display: block;
+  }
+  .large{
+    display: none;
+  }
+  .footer .footer-bg .cat-content ul li{
+    width: 48% !important;
+  }
+}
+@media screen and (min-width: 751px) and (max-width: 979px){
+  .big{
+    width: 980px;
+  }
+  .small{
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  .footer .footer-bg .cat-content ul li h6{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+  .footer .footer-bg .cat-content ul li p{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+}
+@media screen and (min-width: 980px){
+  body{
+    width: 100%;
+  }
+  .small{
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+}
+body {
+  height: 2000px;
+}
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  z-index: 999;
+}
+.top .logo {
+  width: 33px;
+  height: 31px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background: url("../images/logo.jpg");
+  overflow: hidden;
+}
+.top .nav {
+  height: 50px;
+  width: 50px;
+}
+.top .nav .nav-content {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: inherit;
+  width: 100%;
+}
+.top .nav .nav-content span {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #222;
+  transition: top .2s;
+}
+.top .nav .nav-content .topN {
+  top: 16px;
+}
+.top .nav .nav-content .middleN {
+  top: 25px;
+}
+.top .nav .nav-content .bottomN {
+  top: 34px;
+}
+.top .nav .nav-content:hover .topN:nth-child(1) {
+  top: 13px;
+}
+.top .nav .nav-content:hover .middleN:nth-child(2) {
+  top: 25px;
+}
+.top .nav .nav-content:hover .bottomN:nth-child(3) {
+  top: 37px;
+}
+.top .nav .nav-content .topNChange {
+  transform: rotate(-45deg);
+  top: 24px;
+  background-color: #f70e0e;
+  transition: transform .5s;
+}
+.top .nav .nav-content .middleNChange {
+  opacity: 0;
+}
+.top .nav .nav-content .bottomNChange {
+  transform: rotate(45deg);
+  top: 24px;
+  background-color: #f70e0e;
+  transition: transform .5s;
+}
+.top .main-nav {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.top .main-nav ul {
+  padding-bottom: 10px;
+}
+.top .main-nav ul li {
+  text-align: right;
+  padding: 10px;
+  padding-right: 30px;
+}
+.top .main-nav ul li a {
+  color: #fff;
+  font-size: 20px;
+  border-bottom: 1px dashed #ccc;
+}
+.top .main-nav ul li:hover {
+  background-color: rgba(3, 3, 3, 0.7);
+}
+.header {
+  margin-top: 50px;
+  height: 750px;
+  width: 100%;
+}
+.header .banner {
+  position: relative;
+  height: inherit;
+  width: 100%;
+  overflow: hidden;
+}
+.header .banner .section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: 400%;
+}
+.header .banner .section li {
+  float: left;
+  width: 25%;
+  height: inherit;
+  background: url("../images/3.jpg") no-repeat center top;
+  background-size: cover;
+}
+.header .banner .ctrl {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header .banner .ctrl li {
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin-right: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.header .banner .ctrl .cur {
+  background: #fa4900;
+}
+
+
+.second_content{
+  width: 100%;
+  height: 750px;
+  background-image: url('../images/1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.small{
+  width: 100%;
+  height: 750px;
+  background-image: url('../images/small1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.show{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 40px;
+  text-align: center;
+  color: white;
+
+}
+.small_show{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,40%);
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+.include{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: bolder;
+  /*background: red;*/
+}
+.word_top{
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+}
+.word_bottom{
+  /*width: 50%;*/
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+}
+.word_border{
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  margin-top: 40px;
+}
+.no_include{
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-26%,-13%);
+  font-weight: bolder;
+}
+
+
+.footer .footer-bg {
+  overflow: hidden;
+  height: 1100px;
+  background: url('../images/2.jpg') no-repeat center top;
+  background-size: cover;
+  text-align: center;
+}
+.footer .footer-bg .cat-filter {
+  margin-top: 50px;
+  display: inline-block;
+  transform: translateX(-7%);
+}
+.footer .footer-bg .cat-filter li {
+  float: left;
+  margin-left: 20px;
+}
+.footer .footer-bg .cat-filter li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.footer .footer-bg .cat-content {
+  padding-top: 10px;
+}
+.footer .footer-bg .cat-content ul {
+  width: 80%;
+  margin: 0 auto;
+}
+.footer .footer-bg .cat-content ul li {
+  float: left;
+  width: 31%;
+  padding: 10px;
+  background-color: #fff;
+  margin-right: 1%;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.footer .footer-bg .cat-content ul li img {
+  width: 100%;
+}
+.footer .footer-bg .cat-content ul li h6 {
+  margin-top: 10px;
+}
+.footer .footer-bg .cat-content ul li p {
+  margin-top: 10px; 
+}
+.footer .footer-bg .cat-content ul li .cate {
+  line-height: 20px;
+}
+.footer .footer-bg .cat-content ul li .cate a {
+  text-align: center;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+/*.footer .footer-bg .cat-content ul li:nth-child(3n) {
+  margin-right: 0;
+}*/
+.bottom {
+  overflow: hidden;
+  height: 90px;
+  background-color: #000;
+}
+.bottom p {
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+}

@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!--头部导航-->
+	<div class="top container">
+		<div class="nav fr">
+			<div class="nav-content">
+				<span class="topN"></span>
+				<span class="middleN"></span>
+				<span class="bottomN"></span>
+			</div>
+		</div>
+		<div class="logo">
+
+		</div>
+		<div class="main-nav hide">
+			<ul>
+				<li>
+					<a href="javascript:">主页</a>
+				</li>
+				<li>
+					<a href="javascript:">关于我们</a>
+				</li>
+				<li>
+					<a href="javascript:">联系我们</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<!--banner视频部分-->
+	<div class="header">
+		<div class="banner">
+			<ul class="section clearfix">
+				<li data-pic="1">
+					<iframe height=100% width=100% src='http://player.youku.com/embed/XMTM4ODYzMzQ0' frameborder=0 'allowfullscreen'></iframe>
+				</li>
+				<li data-pic="2">
+					<iframe height=100% width=100% src='http://player.youku.com/embed/XMTU4MjIyMzg5Mg==' frameborder=0 'allowfullscreen'></iframe>
+				</li>
+				<li data-pic="3">
+					<iframe height=100% width=100% src='http://player.youku.com/embed/XMTM4ODYzMzQ0' frameborder=0 'allowfullscreen'></iframe>
+				</li>
+				<li data-pic="1">
+					<iframe height=100% width=100% src='http://player.youku.com/embed/XMTU4MjIyMzg5Mg==' frameborder=0 'allowfullscreen'></iframe>
+				</li>
+			</ul>
+			<ol class="ctrl clearfix">
+				<li class="cur"></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
+	</div>
+<!--content 文字內容部分-->
+	<div class="big">
+		<div class="second_content large">
+			<p class="show">Section/02</p>
+			<div class="include">
+				<p class="word_top">私は昔何だかその妨害人に対してつもりの以上からあるですだろ。</p>
+				<p class="word_bottom">ああ一番に関係院もどうしてもその料理ならたまでをありていたでは指導あっませあ<br>りで、突然には困らでしょなずな。欄に云ったのは向後場合がすなわちなでだ。</p>
+				<p class="word_border">もし嘉納君をお話むるだんだん矛盾にいけな春その名それか説明がというご関係ませ<br>ななでして、この十一月は彼らか会自信が入って、張さんのもので主義のそれがかつ<br>て実注文と眺めが私手ぬかりへご学習が潜り込むようにいったい実観念をさなんと、<br>はなはだいくら忠告を云わんといませのを圧したまし。</p>
+			</div>
+		</div>
+	</div>
+	<div class="small">
+		<!-- <div class="second_content"> -->
+			<p class="small_show">Section/02</p>
+			<div class="no_include">
+				<p class="word_top">私は昔何だかその妨害人に対してつもりの以上からあるですだろ。</p>
+				<p class="word_bottom">ああ一番に関係院もどうしてもその料理ならたまでをありていたでは指導あっませありで、突然には困らでしょなずな。欄に云ったのは向後場合がすなわちなでだ。</p>
+				<p class="word_border">もし嘉納君をお話むるだんだん矛盾にいけな春その名それか説明がというご関係ませななでして、この十一月は彼らか会自信が入って、張さんのもので主義のそれがかつて実注文と眺めが私手ぬかりへご学習が潜り込むようにいったい実観念をさなんと、はなはだいくら忠告を云わんといませのを圧したまし。</p>
+			</div>
+		</div>
+	</div>
+<!--footer 猫部分-->
+	<div class="footer">
+		<div class="footer-bg">
+			<ul class="cat-filter clearfix">
+				<li>
+					<a href="javascript:" class="filter-all">all</a>
+				</li>
+				<li>
+					<a href="javascript:" class="cate01">cate01</a>
+				</li>
+				<li>
+					<a href="javascript:" class="cate02">cate02</a>
+				</li>
+				<li>
+					<a href="javascript:" class="cate03">cate03</a>
+				</li>
+			</ul>
+			<div class="cat-content"></div>
+
+		</div>
+	</div>
+
+<template id="tem-cat">
+	<ul class="clearfix all-cat">
+		{{each list as v i }}
+			<li>
+				<img src="./JSON/{{v.thumb}}" alt=""/>
+				<h6>{{v.title}}</h6>
+				<p>{{v.description}}</p>
+				<p class="cate">
+					{{each v.cate as  val i}}
+ 					<a href="javascript:">{{v.cate[val]}}</a>
+					{{/each}}
+				</p>
+			</li>
+		{{/each}}
+	</ul>
+</template>
+
+<!--底部版权-->
+	<div class="bottom">
+		<p>COPYRIGHT © testtest ALL RIGHTS RESERVED.</p>
+	</div>
+	
+
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./lib/template/template.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

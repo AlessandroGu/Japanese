@@ -1,0 +1,236 @@
+body{
+  height: 2000px;
+
+}
+// 头部导航
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:50px;
+  background-color: #fff;
+  z-index: 999;
+  .logo {
+    width: 33px;
+    height: 31px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: url("../imgs/logo.jpg");
+    overflow: hidden;
+  }
+  .nav {
+    height: 50px;
+    width: 50px;
+    .nav-content {
+      position: relative;
+      padding-left: 10px;
+      padding-right: 10px;
+      height: inherit;
+      width: 100%;
+      span{
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #222;
+        transition: top .2s;
+      }
+      .topN{
+        top:16px;
+      }
+      .middleN{
+        top:25px;
+      }
+      .bottomN{
+        top:34px;
+      }
+      &:hover .topN:nth-child(1) {
+        top: 13px
+      }
+      &:hover .middleN:nth-child(2){
+        top: 25px
+      }
+      &:hover .bottomN:nth-child(3){
+        top: 37px
+      }
+      .topNChange{
+        transform: rotate(-45deg);
+        top: 24px;
+        background-color:#f70e0e;
+        transition: transform .5s;
+      }
+      .middleNChange{
+        opacity: 0;
+      }
+      .bottomNChange{
+        transform: rotate(45deg);
+        //transform-origin: center center;
+        top: 24px;
+        background-color:#f70e0e;
+        transition: transform .5s;
+      }
+
+    }
+
+  }
+  .main-nav{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    ul{
+      padding-bottom: 10px;
+      li{
+        text-align: right;
+        padding: 10px;
+        padding-right: 30px;
+        a{
+          color: #fff;
+          font-size: 20px;
+          border-bottom: 1px dashed #ccc;
+        }
+        &:hover{
+          background-color: rgba(3,3,3,.7);
+        }
+      }
+    }
+  }
+}
+
+// banner视频部分
+.header{
+  margin-top: 50px;
+  height: 750px;
+  width: 100%;
+  .banner{
+    position: relative;
+    height: inherit;
+    width: 100%;
+    overflow: hidden;
+    .section{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: inherit;
+      width: 400%;
+      li{
+        float: left;
+        width: 25%;
+        height: inherit;
+        background: url("../imgs/3.jpg") no-repeat center top;
+        background-size: cover;
+      }
+    }
+    .ctrl{
+      position:absolute;
+      bottom: 40px;
+      left: 50%;
+      transform:translateX(-50%);
+      li{
+        float: left;
+        width: 12px;
+        height: 12px;
+        margin-right: 20px;
+        border-radius: 12px;
+        background-color: #fff;
+      }
+      .cur {
+        background: #fa4900;
+      }
+    }
+  }
+
+
+}
+
+// 文字内容区域
+.content{
+  .content-bg{
+    height: 750px;
+    background: url("../imgs/1.jpg") no-repeat center top;
+    background-size: cover;
+
+  }
+}
+
+// 猫区域
+.footer {
+  .footer-bg {
+    overflow: hidden;
+    height: 1100px;
+    background: url('../imgs/2.jpg') no-repeat center top;
+    background-size: cover;
+    text-align: center;
+    .cat-filter{
+      margin-top: 50px;
+      top: 50px;
+      left: 50%;
+      display: inline-block;
+      transform: transitionX(-50%);
+      li{
+        float: left;
+        margin-left: 30px;
+        a{
+          font-size: 16px;
+          font-weight: 600;
+          color: #fff;
+        }
+      }
+    }
+    .cat-content{
+      padding-top: 10px;
+      ul{
+        width: 80%;
+        margin:0 auto;
+        li {
+          float: left;
+          width: 31%;
+          padding: 10px;
+          background-color: #fff;
+          margin-right: 1%;
+          margin-bottom: 10px;
+          text-align: left;
+          img{
+            width: 100%;
+          }
+          h5{
+            margin-top: 10px;
+          }
+          p{
+            margin-top: 10px;
+
+          }
+          .cate{
+            line-height: 20px;
+            a{
+              text-align: center;
+              display: inline-block;
+              width: 50px;
+              height: 20px;
+              background-color: #ccc;
+              border-radius: 5px;
+            }
+          }
+          &:nth-child(3n){
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+//底部
+.bottom{
+  overflow: hidden;
+  height: 90px;
+  background-color: #000;
+  p{
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+  }
+}
